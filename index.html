@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de artes</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #conteiner01 {
+            background-image: url('fotos/desenho-simples.jpg');
+            background-position: center center;
+            background-size: cover;
+            position: relative;
+            width: 80vw;
+            height: 100%;
+            margin: auto;
+
+            transition-property: background-image;
+            transition-duration: 1s;
+        }
+
+        #conteiner01:hover {
+            background-image: url('fotos/colagem-pipoca.jpg'); /* adicionar foto do desenho final */
+        }
+
+        .posicao-texto {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        div.nuvem {
+            opacity: 1.0;
+            background-image: url('fotos/nuvem-desenho.png.png');
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 18vh;
+            height: 13vh;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: 1.5s opacity;
+        }
+
+        #conteiner01:hover div.nuvem {
+            opacity: 0.0;
+        }
+
+        div.sol {
+            opacity: 0.0;
+            background-image: url('fotos/sol-desenho.png.png');
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20vh;
+            height: 20vh;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: 1.5s opacity;
+        }
+
+        #conteiner01:hover div.sol {
+            opacity: 1.0;
+        }
+
+        div#posicao01 {
+            position: absolute;
+            top: 30%;
+            left: 10%;
+        }
+        div#posicao02 {
+            position: absolute;
+            top: 15%;
+            left: 22%;
+        }
+        div#posicao03 {
+            position: absolute;
+            top: 15%;
+            left: 55%;
+        }
+        div#posicao04 {
+            position: absolute;
+            top: 2%;
+            left: 67%;
+        }
+        div#posicao05 {
+            position: absolute;
+            top: 30%;
+            left: 70%;
+        }
+
+        body {
+            font-family: monospace, Courier, 'Courier New';
+            background-color: black;
+        }
+
+        header {
+            height: 5vh;
+            padding-top: 1.5vh;
+            padding-bottom: 1.5vh;
+            background-color: black;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 5vh;
+        }
+
+        main {
+            height: 88vh;
+            background-color: darkgray;
+        }
+
+        footer {
+            height: 3vh;
+            padding-top: 0.5vh;
+            padding-bottom: 0.5vh;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 3vh;
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--criar uma imagem representando alguem visto por fora e quando toma hover vira uma imagem representando a pessoa como ela realmente é 
+    pré hover:
+    - tonalidades escuras e frias
+    - desenho feio e simples
+    - palavras que vem na cabeça das pessoas em nuvens escuras (nerd, esquisito, sem amigos, anti-social, sem potencial, doente etc)
+
+    pós hover:
+    - tonalidades claras e quentes
+    - desenho bem feito
+    - palavras que realmente descrevem a pessoa em nuvens limpas (inteligente, amigavel, timido criativo, muito potencial etc)
+    -->
+    <header>
+        <h1>Não julgue um livro pela capa</h1>
+    </header>
+    <main>
+        <div id="conteiner01">
+            <div>
+                <div id="posicao01" class="nuvem">
+                    <p class="posicao-texto">Nerd</p>
+                </div>
+                <div id="posicao02" class="nuvem">
+                    <p class="posicao-texto">Esquisito</p>
+                </div>
+                <div id="posicao03" class="nuvem">
+                    <p class="posicao-texto">Sem Amigos</p>
+                </div>
+                <div id="posicao04" class="nuvem">
+                    <p class="posicao-texto">Anti-social</p>
+                </div>
+                <div id="posicao05" class="nuvem">
+                    <p class="posicao-texto">Sem Potencial</p>
+                </div>
+            </div>
+            <div>
+                <div id="posicao01" class="sol">
+                    <p class="posicao-texto">inteligente</p>
+                </div>
+                <div id="posicao02" class="sol">
+                    <p class="posicao-texto">Diferente</p>
+                </div>
+                <div id="posicao03" class="sol">
+                    <p class="posicao-texto">Amigavel</p>
+                </div>
+                <div id="posicao04" class="sol">
+                    <p class="posicao-texto">Introvertido</p>
+                </div>
+                <div id="posicao05" class="sol">
+                    <p class="posicao-texto">Com Potencial</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Trabalho feito por Daniel Costa Guerra (Guteu) e Mateus Mendes</p>
+    </footer>
+</body>
+</html>
